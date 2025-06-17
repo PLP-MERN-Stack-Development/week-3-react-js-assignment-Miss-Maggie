@@ -3,6 +3,8 @@ import { ThemeProvider } from './context/ThemeContext';
 import Layout from './components/Layout';
 import TaskManager from './components/TaskManager';
 import PostList from './components/PostList';
+import AnimatedCard from './components/AnimatedCard';
+import ResponsiveExample from './components/ResponsiveExample';
 
 const App = () => {
   const navbarLinks = [
@@ -42,9 +44,12 @@ const App = () => {
           <section id="posts">
             <PostList />
           </section>
+          <AnimatedCard />
+          <ResponsiveExample />
         </div>
       </Layout>
     </ThemeProvider>
+
   );
 };
 
