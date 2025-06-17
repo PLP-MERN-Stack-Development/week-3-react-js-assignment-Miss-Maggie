@@ -1,71 +1,125 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19742064&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# MERN Stack Week 3 React JS Assignment
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+## 📋 Project Overview
 
-## Assignment Overview
+This React.js application includes:
+- **Task Manager:** Add, complete, filter, and delete tasks (with local storage persistence).
+- **Post List:** Fetches posts from JSONPlaceholder, supports searching and pagination.
+- **Dark mode** support using Tailwind CSS.
+- Modular, reusable components for easy maintenance.
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## 🛠️ Setup Instructions
 
-## Getting Started
+### 1. Clone the Repository
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-## Files Included
-
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
-
-## Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
-
-## Project Structure
-
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+```bash
+git clone https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-Miss-Maggie.git
+cd week-3-react-js-assignment-Miss-Maggie/React-assignment-app
 ```
 
-## Submission
+### 2. Install Dependencies
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Make sure you have [Node.js](https://nodejs.org/) installed.
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+```bash
+npm install
+```
 
-## Resources
+### 3. Install Tailwind CSS v4
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+If Tailwind is not already installed, or you want to upgrade to v4, run:
+
+```bash
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npx tailwindcss init -p
+```
+
+- This creates/updates `tailwind.config.js` and `postcss.config.js`.
+- Ensure your `tailwind.config.js` uses `module.exports` and has the correct content paths.
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🌐 Deployed App
+
+The application is deployed and accessible at:  
+[https://your-vercel-app-url.vercel.app](https: coming soon, waiting for access from the organization)
+
+
+## 📦 Dependencies
+
+- **React** (v18+)
+- **Tailwind CSS** (v4)
+- **Vite**
+- **JSONPlaceholder** (for posts API)
+
+## 📁 Project Structure
+
+```
+week-3-react-js-assignment-Miss-Maggie/
+├── React-assignment-ap/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── ... (images, logos, etc.)
+│   │   ├── components/
+│   │   │   ├── AnimatedCard.jsx
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Layout.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── PostList.jsx
+│   │   │   ├── ResponsiveExample.jsx
+│   │   │   └── TaskManager.jsx
+│   │   ├── context/
+│   │   │   └── ThemeContext.js
+│   │   ├── hooks/
+│   │   │   └── useLocalStorage.js
+│   │   ├── pages/
+│   │   │   └── ... (optional: Home.jsx, About.jsx, etc.)
+│   │   ├── styles/
+│   │   │   └── ... (custom CSS or Tailwind directives)
+│   │   ├── utils/
+│   │   │   └── ... (helper functions)
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── tailwind.config.js
+│   ├── package.json
+│   └── README.md
+└── README.md
+```
+
+- `assets/`: Static files and images.
+- `components/`: Reusable UI components, including `AnimatedCard.jsx` and `ResponsiveExample.jsx`.
+- `context/`: React context providers, e.g., `ThemeContext.js` for theme management.
+- `hooks/`: Custom React hooks.
+- `pages/`: Page-level components (if used).
+- `styles/`: Global or custom CSS files.
+- `utils/`: Utility/helper functions.
+- `App.jsx`: Main app component.
+- `main.jsx`: Entry point for React.
+- `tailwind.config.js`: Tailwind CSS configuration.
+
+## 🧭 Navigation
+
+- Use the **Navbar** to switch between Task Manager and Post List.
+- **Task Manager:** Add, complete, filter, and delete tasks.
+- **Post List:** Browse, search, and load more posts.
+- Toggle dark mode using the theme switch (if available).
+
+## 🤝 Contributing
+
+Feel free to fork and submit pull requests!
+
+## 📄 License
+
+This project is for educational purposes.
+
+## Author 
+**Miss-Maggie**
